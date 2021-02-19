@@ -9,4 +9,4 @@
 
 ![some text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/static/avatar1.jpg)
 
-![some text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.02.39.png)
+[test text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.02.39.png)
