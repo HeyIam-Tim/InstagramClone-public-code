@@ -1,0 +1,47 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}Following{% endblock title %}
+{% block content %}
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <!-- Instagram Logo -->
+      <a href="{% url 'home' %}"><div class="instagram_logo">Instagram</div></a>
+      <!-- Home, User Page, and Logout links -->
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}"><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="{% url 'user_page' request.user.id %}">
+          <img class="user_icon" src="{{request.user.instagramuser.profile_pic.url}}" alt=""></a></li>
+          <li><a href="{% url 'login_register:logout' %}"><i class="fas fa-sign-out-alt fa-2x "></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="following_wrapper">
+    <div class="container flex">
+      <section class="flex">
+        <form class="following_form" action="" method="GET">
+          {{following_filter.form}}
+          <input type="submit" class="btn search_btn" value="Search">
+        </form>
+      </section>
+      <section class="wrapper_user flex">
+        {% for following in list %}
+          <div class="phf_wrapper flex">
+            <div class="flex">
+              <a href="{% url 'follow_user' following.id %}"><img class="fu_photo" src="{{following.instagramuser.profile_pic.url}}" alt=""></a>
+              <div class="name_wrapper">
+                <p>{{following.first_name}}</p>
+                <p>{{following.username}}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </section>
+    </div>
+  </div>
+
+{% endblock content %}

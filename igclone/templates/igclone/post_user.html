@@ -1,0 +1,60 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}Post{% endblock title %}
+{% block content %}
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <!-- Instagram Logo -->
+      <a href="{% url 'home' %}"><div class="instagram_logo">Instagram</div></a>
+      <!-- Home, User Page, and Logout links -->
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}"><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="{% url 'user_page' request.user.id %}">
+          <img class="user_icon" src="{{request.user.instagramuser.profile_pic.url}}" alt=""></a></li>
+          <li><a href="{% url 'login_register:logout' %}"><i class="fas fa-sign-out-alt fa-2x "></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Post Wrapper -->
+  <div class="post_wrapper">
+
+    <div class="container flex">
+      
+      <section>
+        <div class="card">
+          <img class="post_img" src="{{post.image.url}}" alt="">
+        </div>
+      </section>
+
+      <section>
+        <br>
+        <a class="btn profile_btn back_profile" href="{% url 'user_page' request.user.id %}">Profile</a>
+        <div class="add_wrapper">
+          <div class="card edit_card">
+            <form method="POST" action="" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="edit_form">Change Photo {{form_post.image}}
+              <label class="btn" for="id_image"> + Choose Photo</label></div>
+
+              <div class="edit_form">Change Description {{form_post.description}}</div>
+
+              <input type="submit" class="btn update_btn" value="Update Post">
+
+            </form>
+          </div>
+        </div>
+        <a class="btn profile_btn del_btn" href="{% url 'delete_post' post.id %}">Delete Post</a>
+        <br>
+        <br>
+      </section>
+      <br>
+    </div>
+  </div>
+
+
+{% endblock content %}

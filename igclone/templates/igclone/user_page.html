@@ -1,0 +1,61 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}{{user.username}}{% endblock title %}
+{% block content %}
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <!-- Instagram Logo -->
+      <a href="{% url 'home' %}"><div class="instagram_logo">Instagram</div></a>
+      <!-- Home and Logout links -->
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}"><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="{% url 'login_register:logout' %}"><i class="fas fa-sign-out-alt fa-2x "></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- User Area -->
+
+  <!-- Main Wrapper -->
+  <div class="user_wrapper">
+
+    <!-- Url for an API call in user_page.js -->
+    <input type="hidden" id="user_page" value="{% url 'user_page' request.user.id %}">
+    
+    <div class="container flex">
+      
+      <!-- User's Data -->
+      <section class="user_info flex">
+        <a href="{% url 'edit_profile' request.user.id %}"><img src="{{user.instagramuser.profile_pic.url}}" class="profile_pic"></a> 
+        <div class="user_data grid">
+          <div class="full_name">{{ user.first_name }}</div>
+          <a class="btn" href="{% url 'edit_profile' request.user.id %}">Edit Profile</a>
+          <div class="posts">{{ num_user_photos }} post{{num_user_photos|pluralize}}</div>
+          <div class="num_followers"><a href="{% url 'followers' request.user.id %}">{{ num_followers }} follower{{num_followers|pluralize}}</a></div>
+          <div class="num_following"><a href="{% url 'following' request.user.id %}">{{ num_following }} following</a></div> 
+          <div class="username">{{ user.username }}</div>
+          <a class="btn" href="{% url 'add_photo' %}">Add Photo</a>
+        </div>
+      </section>
+
+      <!-- User's Photos -->
+      <section class="user_photos">
+        <div class="grid">
+          {% for user_attribute in user_attributes %}
+            <a href="{% url 'post' user_attribute.id %}"><img class="u_photo"
+            src="{{ user_attribute.image.url }}" alt=""></a>
+          {% endfor %}
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="{% static 'js/user.js' %}"></script>
+
+
+{% endblock content %}

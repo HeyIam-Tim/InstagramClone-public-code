@@ -1,0 +1,154 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}IgClone{% endblock title %}
+{% block content %}
+
+  <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <a href="{% url 'home' %}"><div class="instagram_logo">Instagram</div></a>
+        <nav>
+          <ul>
+            <li><a href="{% url 'home' %}"><i class="fas fa-home fa-2x"></i></a></li>
+            <li><a href="{% url 'user_page' request.user.id %}">
+            <img class="user_icon" src="{{request.user.instagramuser.profile_pic.url}}" alt=""></a></li>
+            <li><a href="{% url 'login_register:logout' %}"><i class="fas fa-sign-out-alt fa-2x "></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  <!-- Main Area -->
+  <div class="feed_wrapper">
+    <!-- Flex Container -->
+    <div class="container flex">
+
+      <!-- Flex Element 1. Shows on Tablets and Under screens only -->
+      <div class="wrapper_mob_sug_list">
+        <div class="mob_sug_list">
+
+          <p>Suggestions For You</p>&nbsp;&nbsp;&nbsp;
+
+          <!-- See List Button -->
+          <div>
+            <a class="btn" data-toggle="collapse" href="#seeList" role="button" aria-expanded="false" aria-controls="collapseExample">
+              See List
+            </a>
+
+            <!-- Collapse Menu -->
+            <div class="collapse" id="seeList">
+
+              <!-- List of Suggested Users -->
+              <div class="s_list">
+                {% for suggestioned_user in suggestioned_users %}
+                  <div class="info_user">
+                    <a href="{% url 'follow_user' suggestioned_user.id %}"><img class="sug_user_icon" src="{{ suggestioned_user.instagramuser.profile_pic.url }}"></a>
+                    <a class="f_name" href="{% url 'follow_user' suggestioned_user.id %}">{{suggestioned_user.username}}</a>
+                  </div>
+                {% endfor %}
+              </div>
+
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Flex Element 2 -->
+      <section class="u_posts flex">
+        {% for publication in publications %}
+        <!-- Card -->
+        <div class="card">
+
+          <!-- User's profile picture and fullname -->
+          <div class="pic_n_fullname">
+            <a href="{% url 'follow_user' publication.user.id %}">
+            <img class="user_icon" src="{{ publication.user.instagramuser.profile_pic.url }}"></a>
+            <a href="{% url 'follow_user' publication.user.id %}"><div class="u_fullname">{{ publication.user.first_name }}</div>
+            </a>
+          </div>
+
+          <!-- Post Photo -->
+          <a href="{% url 'publication' publication.user.id publication.id %}" class="view_com"><img class="img_post" src="{{ publication.image.url }}"></a>
+          
+
+          <!-- Details underneath picture -->
+          <div class="bottom_wrapper">
+
+            <!-- Like Checker -->
+            <input type="hidden" id="index_url" value="{% url 'home' %}">
+            <div id="like_unlike_icon_wrapper">
+              {% csrf_token %}
+              <input type="hidden" value="{{ publication.id }}" id="publication_id">  
+              <img class="like-unlike" id="like_unlike_icon" src="" alt="">
+              <div class="n_likes">{{ publication.likes }} like{{ publication.likes|pluralize }}</div>
+              <input type="hidden" value="{{ request.user }}">
+              <input type="hidden" value="{{ publication.liked.all }}">
+            </div>
+
+            <!-- Photo's description -->
+            <div class="description">
+              <div class="u_fullname">{{ publication.user.first_name }}</div>
+              <div class="pic_description">{{ publication.description }}</div>
+            </div>
+
+            <!-- Comment Section -->
+            <a href="{% url 'publication' publication.user.id publication.id %}" class="view_com">View all comments</a> 
+
+            <div class="comments_con">
+            {% for comment in publication.comments.all|slice:"::-1"|slice:":3" %}
+              <div class="comments">
+                <span id="author_comm" class="u_fullname">{{comment.author}}</span>
+                <span id="body_comm">{{comment.body}}</span>
+              </div>
+            {% endfor %}
+            </div>
+
+          </div>
+          
+          <!-- Add New Comment -->
+          <form action="" class="comment">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Add a comment..."></textarea>
+            <div type="" id="comment_btn">Comment</div>
+          </form>
+
+        </div>
+        {% endfor %}
+         
+      </section>
+      <!-- Side Bar -->
+      <section class="suggested_list">
+        <div class="flex">
+
+          <!-- User's profile picture and fullname -->
+          <div class="info_user">
+            <a href="{% url 'user_page' request.user.id %}">
+            <img class="user_icon" src="{{ request.user.instagramuser.profile_pic.url }}"></a>
+            <div class="f_name"><a href="{% url 'user_page' request.user.id %}">{{ request.user.first_name }}
+            </a></div>
+          </div>
+
+          <p>Suggestions For You</p>
+
+          <!-- List of Suggested Users -->
+          <div class="s_list">
+            {% for suggestioned_user in suggestioned_users %}
+              <div class="info_user">
+                <a href="{% url 'follow_user' suggestioned_user.id %}"><img class="sug_user_icon" src="{{ suggestioned_user.instagramuser.profile_pic.url }}"></a>
+                <a class="f_name" href="{% url 'follow_user' suggestioned_user.id %}">{{suggestioned_user.first_name}}</a>
+              </div>
+            {% endfor %}
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+  <script type="text/javascript" src="{% static 'js/indexx_page.js' %}"></script>
+
+
+{% endblock content %}

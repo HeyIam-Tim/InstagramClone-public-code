@@ -1,0 +1,72 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}Edit Profile{% endblock title %}
+{% block content %}
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <!-- Instagram Logo -->
+      <a href="{% url 'home' %}"><div class="instagram_logo">Instagram</div></a>
+      <!-- Home, User Page, and Logout links -->
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}"><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="{% url 'user_page' request.user.id %}">
+          <img class="user_icon" src="{{request.user.instagramuser.profile_pic.url}}" alt=""></a></li>
+          <li><a href="{% url 'login_register:logout' %}"><i class="fas fa-sign-out-alt fa-2x "></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Wrapper -->
+  <div class="edit_wrapper">
+
+    <div class="container flex">
+      
+      <!-- User's Data -->
+      <section class="user_info flex">
+        <img src="{{request.user.instagramuser.profile_pic.url}}" class="profile_pic">
+        <div class="user_data grid">
+
+          <div class="full_name">{{ request.user.first_name }}</div>
+          <a class="btn profile_btn" href="{% url 'user_page' request.user.id %}">Profile</a>
+          <div class="username">{{ request.user.username }}</div>
+          <div></div>
+          <form action="" method="POST">
+
+            <!-- Url for an API call in edit_profile.js -->
+            <input type="hidden" id="edit_profile" value="{% url 'edit_profile' request.user.id %}">
+
+            <!-- User's Id for an API call in edit_profile.js -->
+            <input type="hidden" id="user_id" value="{{request.user.id}}">
+
+            <div id="switch_theme" class="btn switch_btn">Switch Theme</div>
+          </form>
+          
+        </div>
+      </section>
+
+      <!-- Update user's information -->
+      <section class="card">
+        <form method="POST" action="" enctype="multipart/form-data">
+          <input type="hidden" value="update" name="update" id="update">
+          {% csrf_token %}
+          <div class="edit_form">Profile Image {{ pic_form.profile_pic }}
+          <label class="btn" for="id_profile_pic"> + Choose Photo</label></div>
+          <div class="edit_form">Username {{form.username}}</div>
+          <div class="edit_form">Full Name {{form.first_name}}</div>
+          <input type="submit" class="btn update_btn" value="Update Information">
+        </form>
+      </section>
+
+      <br>
+      <a class="btn del_btn" href="{% url 'delete_profile' request.user.id %}">Delete Profile</a>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="{% static 'js/edit_profil.js' %}"></script>
+
+
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}Add Photo{% endblock title %}
+{% block content %}
+
+
+  <!-- Add Photo Wrapper -->
+  <div class="add_wrapper">
+
+    <div class="container flex">
+      <section class="card">
+        <form method="POST" action="" enctype="multipart/form-data">
+
+          {% csrf_token %}
+
+          <div class="edit_form">Add New Photo <input type="file" accept="image/*" name="pub_img" id="img_pub" required>
+          <label class="btn" for="img_pub"> + New Photo</label></div>
+
+          <div class="edit_form">Description<input type="text" name="descrip" placeholder="type description here..." required></div>
+
+          <input type="submit" class="btn update_btn" value="Upload Photo">
+
+        </form>
+      </section>
+    </div>
+  </div>
+
+{% endblock content %}

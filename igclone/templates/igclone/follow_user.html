@@ -1,0 +1,69 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}{{host_user.username}}{% endblock title %}
+{% block content %}
+
+  <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <!-- Instagram Logo -->
+        <a href="{% url 'home' %}"><div class="instagram_logo">Instagram</div></a>
+        <!-- Home, User Page, and Logout links -->
+        <nav>
+          <ul>
+            <li><a href="{% url 'home' %}"><i class="fas fa-home fa-2x"></i></a></li>
+            <li><a href="{% url 'user_page' request.user.id %}">
+            <img class="user_icon" src="{{request.user.instagramuser.profile_pic.url}}" alt=""></a></li>
+            <li><a href="{% url 'login_register:logout' %}"><i class="fas fa-sign-out-alt fa-2x "></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  <!-- Main Wrapper -->
+  <div class="follow_wrapper">
+
+    <div class="container flex">
+      
+      <!-- User's Data -->
+      <section class="user_info flex">
+        <img src="{{host_user.instagramuser.profile_pic.url}}" class="profile_pic">
+        <div class="user_data grid">
+          <div class="full_name">{{ host_user.first_name }}</div>
+
+          <form method="POST" action="{% url 'follow_user' host_user.id %}">
+            {% csrf_token %}
+            {% if host_user not in guest_user.instagramuser.following.all %}
+              <input type="submit" class="btn" value="Follow">
+            {% else %}
+              <button type="submit" class="btn follow_button"><img class="follow_pic" src="{% static 'images/followers_icon.png' %}" alt=""></button>
+            {% endif %}
+            
+          </form>
+
+          <div class="posts">{{ num_users_photos }} post{{num_users_photos|pluralize}}</div>
+
+          <div class="num_followers"><a href="{% url 'followerList' host_user.id %}">{{ num_followers }} follower{{num_followers|pluralize}}</a></div>
+          
+          <div class="num_following"><a href="{% url 'followingList' host_user.id %}">{{ num_following }} following</a></div>
+
+          <div class="username">{{ host_user.username }}</div>
+          
+        </div>
+      </section>
+
+      <!-- User's Photos -->
+      <section class="user_photos">
+        <div class="grid">
+          {% for users_photo in users_photos %}
+            <a href="{% url 'publication' host_user.id users_photo.id %}" class="view_com"><img class="u_photo"
+            src="{{ users_photo.image.url }}" alt=""></a>
+       
+          {% endfor %}
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+{% endblock content %}

@@ -1,0 +1,87 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}Post{% endblock title %}
+{% block content %}
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <!-- Instagram Logo -->
+      <a href="{% url 'home' %}"><div class="instagram_logo">Instagram</div></a>
+      <!-- Home, User Page, and Logout links -->
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}"><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="{% url 'user_page' request.user.id %}">
+          <img class="user_icon" src="{{request.user.instagramuser.profile_pic.url}}" alt=""></a></li>
+          <li><a href="{% url 'login_register:logout' %}"><i class="fas fa-sign-out-alt fa-2x "></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Post Wrapper -->
+  <div class="post_wrapper">
+
+    <div class="container flex">
+      
+      <section class="sec1"> 
+        <div class="card">
+          <img class="post_img" src="{{post.image.url}}" alt="">
+          <div class="pub_descrip">
+            <span class="fname">{{post.user.first_name}}</span>
+            <span>{{post.description}}</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec2">
+
+        <div class="pub_wrapper">
+
+          <div class="pub_like card">
+            <div class="red_likes">
+              <img src="{% static 'images/like-heart.png' %}" alt="">
+              <p>{{likes}} like{{ likes|pluralize }} </p>
+            </div>
+            <div class="wrapper_user flex">
+              {% for ig_user in liked_list %}
+                <div class="phf_wrapper flex">
+
+                  <div class="flex">
+                  <a href="{% url 'follow_user' ig_user.id %}"><img class="fu_photo" src="{{ig_user.instagramuser.profile_pic.url}}" alt=""></a>
+                    <div class="name_wrapper">
+                      <p>{{ig_user.first_name}}</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="pub_comment">
+            <div class="pub_like card">
+              <div class="red_likes">
+                <p>{{num_comments}} comment{{ num_comments|pluralize }} </p>
+              </div>
+              <div class="comments_con">
+              {% for comment in comments %}
+                <div class="comments">
+                  <span id="author_comm" class="u_fullname">{{comment.author}}</span>
+                  <span id="body_comm">{{comment.body}}</span>
+                </div>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <br>
+    </div>
+  </div>
+
+
+{% endblock content %}

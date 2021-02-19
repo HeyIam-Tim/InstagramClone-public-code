@@ -1,0 +1,21 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}Delete Profile{% endblock title %}
+{% block content %}
+
+  <!-- Delete Profile Wrapper -->
+  <div class="d_profile_wrapper">
+
+    <div class="container flex">
+      <section class="card">
+        <form method="POST" action="">
+          {% csrf_token %}
+          <p> Are you sure you want to delete the user "{{user.username}}"?</p>
+          <a class="btn cancel_btn" href="{% url 'user_page' request.user.id %}">Cancel</a>
+          <input class="btn del_btn" type="submit" name="Confirm" value="Submit">
+        </form>
+      </section>
+    </div>
+  </div>
+
+{% endblock content %}
