@@ -1,0 +1,58 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}Sign up{% endblock title %}
+{% block content %}
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'css/register_page.css' %}">
+
+  <!-- Register Form -->
+  <div class="r_wrapper">
+    <div class="container flex">
+      <!-- Form Card -->
+      <div class="card">
+        <img class="instagram_logo" src="{% static 'images/instagram_logo.png' %}" alt="">
+        <div class="sec_header">Sign up to see photos and videos from your friends.</div> 
+        <form method="POST" action="" class="">
+          {% csrf_token %}
+          <div class="form_control">
+            {{form.username}}
+          </div>
+          <div class="form_control">
+            {{form.first_name}}
+          </div>
+          <div class="form_control">
+            {{form.email}}
+          </div>
+          <div class="form_control">
+            {{form.password1}}
+          </div>
+          <div class="form_control">
+            {{form.password2}}
+          </div>  
+          <input type="submit" value="Sign up" class="btn">
+          <div class="sec_header r_policy">By signing up, you agree to our Terms , Data Policy and Cookies Policy.</div>
+        </form>
+      </div>
+
+      <!-- Error Message -->
+      <div class="l_error">{{form.errors}}</div>
+
+      <!-- Sign Up Card -->
+      <div class="signup_card card">Have an account?&nbsp;<a href="{% url 'login_register:login' %}">Log In</a>
+      </div>
+
+      <p>Get the app.</p>
+      
+      <div class="l_download_icons">
+        <a href="https://play.google.com/">
+        <img class="l_icon" src="{% static 'images/googleplay.png' %}"></a>
+              
+        <a href="https://apps.apple.com/">
+        <img class="l_icon" src="{% static 'images/appstore.png' %}"></a>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock content %}

@@ -1,0 +1,71 @@
+{% extends 'igclone/main.html' %}
+{% load static %}
+{% block title %}Login{% endblock title %}
+{% block content %}  
+  <!-- Login CSS -->
+  <link rel="stylesheet" href="{% static 'css/login_pag.css' %}">
+
+  <!-- Main Container -->
+  <div class="l_wrapper">
+
+    <div class="container flex">
+
+      <!-- First Flex Item -->
+      <i class="fab fa-instagram fa-10x"></i>
+
+      <!-- Second Flex Item -->
+      <!-- Flex Container -->
+      <div class="login_container">
+
+        <p>If don't want to create a new user just</p>
+        <p>use the following credentials below</p>
+        <div class="doe"><p>Username:</p><p id="john">John</p></div>
+        <div class="doe"><p>Password:</p><p id="john">will1111</p></div>
+        
+
+        <!-- Form Card -->
+        <div class="card">
+          <img class="instagram_logo" src="{% static 'images/instagram_logo.png' %}" alt="">
+          <form method="POST" action="" class="">
+            {% csrf_token %}
+            <div class="form_control">
+              <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="form_control">
+              <input type="text" name="password" placeholder="Password" required>
+            </div>
+            {% for message in messages %}
+              {% if message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+              <div class="l_error">{{message}}</div>
+              {% else %}
+              <div style="color:green;" class="l_error">{{message}}</div>
+              {% endif %}
+            {% endfor %}
+            <input type="submit" value="Log In" class="btn">
+            <a href="{% url 'reset_password' %}" class="l_password_reset">Forgot password?</a>
+          </form>
+        </div>
+        <!-- Sign Up Card -->
+        <div class="signup_card card">Don't have an account?&nbsp;<a href="{% url 'login_register:register' %}">Sign up</a>
+        </div>
+
+        <p>Get the app.</p>
+        
+        <div class="l_download_icons">
+          <a href="https://play.google.com/">
+          <img class="l_icon" src="{% static 'images/googleplay.png' %}"></a>
+                
+          <a href="https://apps.apple.com/">
+          <img class="l_icon" src="{% static 'images/appstore.png' %}"></a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+
+{% endblock content %}
+
+
+
