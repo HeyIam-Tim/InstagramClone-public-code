@@ -10,7 +10,7 @@
 
 #### User page.
 
-<img alt='User Page' width='500' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2013.52.43.png">   <img alt='User Page' width='500' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/django%20user%20page.png">
+<img alt='User Page' width='450' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2013.52.43.png">   <img alt='User Page' width='450' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/django%20user%20page.png">
 <br>
 <br>
 
