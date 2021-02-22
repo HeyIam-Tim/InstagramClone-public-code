@@ -15,10 +15,8 @@
 
 #### Feed page
 
-<img alt='Feed Page' width='800' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/feed%20page%20gif.gif">
+![feed page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/feed%20page%20gif.gif)
 
-<br>
-<br><br>
 <br><br>
 <br>
 ![register page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/feed%20page%20gif.gif)
