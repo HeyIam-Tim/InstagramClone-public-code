@@ -43,6 +43,17 @@ Update and Delete functionalities.
 <br>
 
 
+### Publication page.
+Uploading and Viewing publications.
+
+<img alt='User Page' width='480' src="<img alt='User Page' width='480' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2013.52.43.png">   <img alt='User Page' width='480' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/add%20photo.png">
+<br>
+<br>
+<br>
+
+
+
+
 
 [https://instagram-tim.herokuapp.com](https://instagram-tim.herokuapp.com)
 
