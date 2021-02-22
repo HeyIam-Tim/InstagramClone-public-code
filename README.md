@@ -37,7 +37,7 @@ Like and Comment functionalities.
 ### Edit page.
 Update and Delete functionalities.
 
-<img alt='Edit Page' width='960' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.02.13.png">
+<img alt='Edit Page' width='820' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.02.13.png">
 <br>
 <br>
 <br>
@@ -46,7 +46,7 @@ Update and Delete functionalities.
 ### Publication page.
 Uploading and Viewing publications.
 
-<img alt='User Page' width='480' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/pubpage.png">   <img alt='User Page' width='480' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/add%20photo.png">
+<img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/pubpage.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/add%20photo.png">
 <br>
 <br>
 <br>
