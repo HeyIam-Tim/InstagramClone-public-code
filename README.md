@@ -4,7 +4,6 @@
 #### Login and Register pages
 
 ![login page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/giphy.gif)   ![register page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/register.gif)
-
 <br>
 <br>
 
@@ -12,6 +11,8 @@
 #### User page
 
 <img alt='User Page' width='800' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2013.52.43.png">
+<br>
+<br>
 
 
 #### Feed page
