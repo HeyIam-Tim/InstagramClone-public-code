@@ -21,8 +21,6 @@
 Like and Comment functionalities.
 
 <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/feed%20page%20gif.gif">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/scrool%20feed.gif">
-
-![feed page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/feed%20page%20gif.gif)   ![feed page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/scrool%20feed.gif)
 <br>
 <br>
 <br>
