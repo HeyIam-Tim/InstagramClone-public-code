@@ -16,7 +16,7 @@
 
 
 ### Feed page.
-<p>Like and Comment functionalities.</p>
+<span>Like and Comment functionalities.</span>
 
 ![feed page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/feed%20page%20gif.gif)   ![feed page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/scrool%20feed.gif)
 <br>
