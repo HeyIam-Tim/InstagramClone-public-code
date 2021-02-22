@@ -51,6 +51,8 @@ Uploading and Viewing publications.
 <br>
 <br>
 
+Follow Functionality
+
 
 
 
