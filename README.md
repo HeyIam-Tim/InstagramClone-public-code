@@ -1,9 +1,10 @@
 ## InstagramClone App
-<br>
+
 
 #### Login and Register pages
 
 ![login page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/giphy.gif)   ![register page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/register.gif)
+
 <br>
 <br>
 
@@ -18,8 +19,6 @@
 ![feed page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/feed%20page%20gif.gif)
 
 <br><br>
-<br>
-![register page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/feed%20page%20gif.gif)
 
 
 [https://instagram-tim.herokuapp.com](https://instagram-tim.herokuapp.com)
