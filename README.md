@@ -4,14 +4,12 @@
 ### login and Register pages
 
 
-![test text text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/giphy.gif)        ![test text text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/register.gif)
+![login page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/giphy.gif)   ![register page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/register.gif)
 
 
+### User page
 
-
-
-
-![Screenshot 2021-02-19 at 14 04 59](https://user-images.githubusercontent.com/69080064/108484619-d43bb400-72bd-11eb-929f-80b02d1bf2d6.png)
+![User page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2013.52.43.png)
 
 
 
