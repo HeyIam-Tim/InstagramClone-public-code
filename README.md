@@ -1,12 +1,12 @@
-# InstagramClone App
-
+## InstagramClone App
+<br>
 
 #### Login and Register pages
 
 ![login page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/giphy.gif)   ![register page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/register.gif)
 <br>
 <br>
-<br>
+
 
 #### User page
 
