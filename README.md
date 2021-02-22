@@ -12,5 +12,5 @@
 
 ![test text text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.02.39.png)
 
-![test text text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/giphy.gif)
+![test text text](<img width=700px src=https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/giphy.gif>)
 
