@@ -14,3 +14,7 @@
 
 ![test text text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/giphy.gif)
 
+![test text text](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/register.gif)
+
+
+
