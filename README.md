@@ -28,7 +28,7 @@ Like and Comment functionalities.
 
 ### Switching Theme.
 
-![feed page](https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/dark%20theme%20gif%20gif.gif)   <img alt='Edit Page' width='480' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.06.03.png">
+<img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/dark%20theme%20gif%20gif.gif">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.06.03.png">
 <br>
 <br>
 <br>
