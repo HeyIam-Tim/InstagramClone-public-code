@@ -9,9 +9,9 @@
 <br>
 
 
-### User page.
+### Profile page.
 
-<img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2013.52.43.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/django%20user%20page.png">
+<img alt='Profile Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2013.52.43.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/django%20user%20page.png">
 <br>
 <br>
 <br>
@@ -26,7 +26,7 @@ Like and Comment functionalities.
 <br>
 
 
-### Switching Theme.
+### Switching a Theme.
 
 <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/dark%20theme%20gif%20gif.gif">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.06.03.png">
 <br>
@@ -51,7 +51,14 @@ Uploading and Viewing publications.
 <br>
 <br>
 
-Follow Functionality
+
+### User's page.
+Follow and Unfollow functionalities.
+
+<img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Follow%20Unfollow.gif">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Follow%20Unfollow.png">
+<br>
+<br>
+<br>
 
 
 
