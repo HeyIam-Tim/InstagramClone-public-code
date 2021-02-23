@@ -53,7 +53,7 @@ Follow and Unfollow functionalities.
 
 
 ### Reset Password page.
-Reset password functionality.
+Reset Password functionality.
 
 <img alt='Reset Password page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/reset%20password4.png">   <img alt='Reset Password page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/reset%20password3.png">   <img alt='Reset Password page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/reset%20password2.png">   <img alt='Reset Password page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/reset%20password1.png">
 <br>
