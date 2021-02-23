@@ -72,7 +72,7 @@ Uploading and Viewing publications.
 
 ### And Other pages.
 
-<img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.03.27.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-23%20at%2011.18.09.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.02.31.png">
+<img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.03.27.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-23%20at%2011.18.09.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Screenshot%202021-02-19%20at%2014.02.31.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/last%20photo.png"> 
 <br>
 <br>
 <br>
