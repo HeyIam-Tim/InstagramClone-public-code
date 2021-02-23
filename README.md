@@ -49,7 +49,7 @@ Update and Delete functionalities.
 ### User's page.
 Follow and Unfollow functionalities.
 
-<img alt='User's page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Follow%20Unfollow.gif">   <img alt='User's page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Follow%20Unfollow.png">
+<img alt='User"s page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Follow%20Unfollow.gif">   <img alt='User"s page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/Follow%20Unfollow.png">
 <br>
 <br>
 <br>
