@@ -43,15 +43,6 @@ Update and Delete functionalities.
 <br>
 
 
-### Publication page.
-Uploading and Viewing publications.
-
-<img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/pubpage.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/add%20photo.png">
-<br>
-<br>
-<br>
-
-
 ### User's page.
 Follow and Unfollow functionalities.
 
@@ -61,7 +52,22 @@ Follow and Unfollow functionalities.
 <br>
 
 
+### Reset Password page.
+Reset password functionality.
 
+<img alt='Reset Password page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/reset%20password4.png">   <img alt='Reset Password page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/reset%20password3.png">   <img alt='Reset Password page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/reset%20password2.png">   <img alt='Reset Password page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/reset%20password1.png">
+<br>
+<br>
+<br>
+
+
+### Publication page.
+Uploading and Viewing publications.
+
+<img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/pubpage.png">   <img alt='User Page' width='410' src="https://github.com/HeyIam-Tim/InstagramClone-public-code/blob/main/README-images/add%20photo.png">
+<br>
+<br>
+<br>
 
 
 [https://instagram-tim.herokuapp.com](https://instagram-tim.herokuapp.com)
