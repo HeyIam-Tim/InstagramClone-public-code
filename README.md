@@ -83,4 +83,3 @@ Uploading and Viewing publications.
 
 The link: [https://instagram-tim.herokuapp.com](https://instagram-tim.herokuapp.com)
 
-
