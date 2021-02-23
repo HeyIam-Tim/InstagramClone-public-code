@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto:wght@100&display=swap');
+
+:root {
+  --first_color: #fff;
+  --main_color: #fafafa;
+  --border_color: rgb(216, 212, 212);
+  --main_text_color: #333;
+  --first_text_colot: #fff;
+  --primary-color: #047aed;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.1s;
+}
+
+body {
+  background-color: var(--main_color);
+  font-family: 'lato', sans-serif;
+  color: var(--main_text_color);
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+body footer span {
+  margin: 10px 5px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  bottom: 0px;
+  /* font-family: 20px !important; */
+  /* color: red; */
+  font-size: 12px;
+}
+
+
+/* Utilities */
+.container {
+  max-width: 975px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0;
+  background-color: var(--first_color);
+  color: #333;
+  height: 55px;
+  border-bottom: 0.5px var(--border_color) solid;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar .instagram_logo {
+  font-family: 'Grand Hotel', cursive;
+  font-size:30px;
+  color:var(--main_text_color);
+}
+
+.navbar .fa-home,
+.navbar .fa-instagram,
+.navbar .fa-sign-out-alt {
+  color: var(--main_text_color);
+}
+
+.navbar .user_icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px #fff solid;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  display: block;
+  background: var(--first_color);
+  color: var(--main_text_color);
+  border-radius: 3px;
+  border: var(--border_color) 0.5px solid;
+  margin: 10px;
+  z-index: 100;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  color: #fff;
+}
+
+.l_wrapper,
+.r_wrapper {
+  background-color: #fafafa;
+  position: relative;
+}
+
+.l_wrapper p,
+.r_wrapper p {
+  color: #333;
+}
+
+.l_wrapper .instagram_logo,
+.r_wrapper .instagram_logo {
+  width: 150px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.l_wrapper .form_control,
+.r_wrapper .form_control {
+  margin-bottom: 10px;
+  font-family: 'lato', sans-serif;
+}
+
+.l_wrapper .l_error,
+.r_wrapper .l_error {
+  width: 230px;
+  text-align: center;
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.l_wrapper .btn,
+.r_wrapper .btn { 
+  background: #0682ff;
+  width: 230px;
+  height: 35px;
+  font-family: 'roboto';
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.l_wrapper .l_icon,
+.r_wrapper .l_icon {
+  width: 120px;
+  margin: 0 2px;
+}

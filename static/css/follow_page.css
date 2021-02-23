@@ -1,0 +1,176 @@
+.following_wrapper {
+  max-width: 900px;
+  background: var(--main_color);
+  /* background: #000; */
+  position: relative;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+.following_wrapper .flex {
+  flex-direction: column;
+  width: 900px;
+}
+
+.following_wrapper .flex form {
+  margin: 30px 0;
+}
+
+.following_wrapper .flex .wrapper_user form {
+  display: flex;
+}
+
+.following_wrapper .flex .following_form {
+  width: 90%;
+  max-width: 550px;
+  display: flex;
+}
+
+.following_wrapper .flex input[type='text'] {
+  width: 100%;
+  border: 0.5px var(--border_color) solid;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.following_wrapper .flex .search_btn {
+  background-color: rgb(0, 182, 39);
+  font-family: 'roboto';
+  font-size: 14px;
+  padding: 3px 20px;
+  margin-left: 20px;
+}
+
+.following_wrapper .container .wrapper_user,
+.post_wrapper .container .sec2 .wrapper_user {
+  width: 100%;
+  max-width: 550px;
+}
+
+.post_wrapper .container .sec2 .flex {
+  width: 100%;
+  max-width: 550px;
+  flex-direction: column;
+
+}
+
+.following_wrapper .container .wrapper_user .flex {
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.post_wrapper .container .sec2 .wrapper_user .flex {
+  flex-direction: column;
+}
+
+.post_wrapper .container .sec2 .wrapper_user .phf_wrapper .flex {
+  justify-content: flex-start;
+  margin-bottom: 0px;
+  flex-direction: row;
+
+}
+
+.following_wrapper .container .wrapper_user .phf_wrapper .flex {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 0px;
+}
+
+.following_wrapper .wrapper_user .flex .fu_photo,
+.post_wrapper .container .sec2 .wrapper_user .flex .fu_photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px #fff solid;
+  cursor: pointer;
+}
+
+.post_wrapper .container .sec2 .wrapper_user .flex .fu_photo {
+  width: 40px;
+  height: 40px;
+}
+
+.following_wrapper .wrapper_user .name_wrapper p {
+  font-family: 'roboto'; 
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+/* .post_wrapper .container .sec2 .wrapper_user .name_wrapper p {
+  font-family: 'roboto'; 
+  font-size: 12px;
+  margin-left: 0px;
+} */
+
+.post_wrapper .container .sec2 .wrapper_user .name_wrapper p {
+  font-family: 'roboto'; 
+  font-size: 12px;
+  margin: 10px 0;
+  margin-left: 10px;
+}
+
+.following_wrapper .container .wrapper_user .phf_wrapper .form_wrapper {
+  display: flex;
+}
+
+.following_wrapper .wrapper_user .flex .btn {
+  font-family: 'roboto'; 
+  font-size: 14px;
+  padding: 3px 20px;
+}
+
+.following_wrapper .wrapper_user .flex .remove_btn {
+  background-color: rgb(138, 138, 138);
+  margin-left: 20px;
+}
+
+
+/* Tablets and under */
+@media(max-width: 850px) {
+  .following_wrapper .flex {
+    width: 650px;
+  }
+}
+
+
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .following_wrapper .flex {
+    width: 400px;
+  }
+
+  .following_wrapper .container .wrapper_user .flex{
+    margin-bottom: 25px;
+  }
+
+  .following_wrapper .wrapper_user .flex .fu_photo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .following_wrapper .wrapper_user .name_wrapper p {
+    font-size: 13px;
+    margin-left: 30px;
+  }
+
+  .following_wrapper .flex .wrapper_user form {
+    flex-direction: column;
+    margin: 2px 0;
+  }
+
+  .following_wrapper .container .wrapper_user .phf_wrapper .form_wrapper {
+    flex-direction: column;
+  }
+
+  .following_wrapper .wrapper_user .flex .btn {
+    padding: 3px 13px;
+  }
+
+  .following_wrapper .wrapper_user .flex .remove_btn {
+    padding: 3px 25px;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,103 @@
+.l_wrapper .flex {
+  top: 80px;
+  height: 800px;
+  width: 600px;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+}
+
+.l_wrapper .doe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l_wrapper p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.l_wrapper .doe #john {
+  font-size: 15px;
+  font-family: 'roboto';
+  color: #333;
+  margin-left: 5px;
+}
+
+.l_wrapper .login_container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.l_wrapper .fa-instagram {
+  color: rgb(255, 167, 182);
+  top: 100px;
+  position: relative;
+}
+
+.l_wrapper .card {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: rgb(216, 212, 212) 0.5px solid;
+  background: #fff;
+  color: #333;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.l_wrapper input[type='text'] {
+  width: 230px;
+  height: 35px;
+  border: rgb(216, 212, 212) 0.5px solid;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.l_wrapper .card a {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  color: #00468b;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.l_wrapper .signup_card {
+  height: 70px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.l_wrapper .signup_card a {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'roboto';
+  color: #0682ff;
+  padding-top: 2px;
+}
+
+.l_wrapper p {
+  text-align: center;
+}
+
+.l_wrapper .l_download_icons {
+  margin: 10px auto;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .l_wrapper .fa-instagram {
+    display: none;
+  }
+
+  .l_wrapper .flex {
+    width: 300px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,70 @@
+.r_wrapper .flex {
+  height: auto;
+  width: 600px;
+  flex-direction: column;
+  position: relative;
+}
+
+.r_wrapper .card {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  border: rgb(216, 212, 212) 0.5px solid;
+  background: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.r_wrapper .sec_header {
+  width: 230px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'roboto';
+  font-size: 14px;
+  color: rgb(117, 114, 114);
+}
+
+.r_wrapper input[type='text'],
+.r_wrapper input[type='email'],
+.r_wrapper input[type='password'] {
+  width: 230px;
+  height: 35px;
+  border: rgb(216, 212, 212) 0.5px solid;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.r_wrapper .r_policy {
+  font-size: 11px;
+}
+
+.r_wrapper .signup_card {
+  height: 70px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.r_wrapper .signup_card a {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'roboto';
+  color: #0682ff;
+  padding-top: 2px;
+  text-decoration: none;
+}
+
+.r_wrapper .l_download_icons {
+  margin: 10px auto;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .r_wrapper .flex {
+    width: 350px;
+    margin: 0 auto;
+  }
+}

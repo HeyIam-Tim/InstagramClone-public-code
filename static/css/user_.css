@@ -1,0 +1,469 @@
+.user_wrapper,
+.follow_wrapper,
+.edit_wrapper,
+.add_wrapper,
+.d_profile_wrapper,
+.post_wrapper {
+  background: var(--main_color);
+  /* background: #000; */
+  position: relative;
+  margin-top: 55px;
+}
+
+.edit_wrapper {
+  margin-bottom: 155px;
+}
+
+.add_wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.user_wrapper .flex,
+.follow_wrapper .flex,
+.edit_wrapper .flex {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.post_wrapper .flex {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.user_wrapper .user_info,
+.follow_wrapper .user_info,
+.edit_wrapper .user_info {
+  background: var(--main_color);
+}
+
+.user_wrapper .user_data .num_following a,
+.follow_wrapper .user_info .num_following a {
+  text-decoration: none;
+  color: var(--main_text_color);
+}
+
+.user_wrapper .user_data .num_following a:hover,
+.follow_wrapper .user_info .num_following a:hover {
+  color: var(--primary-color);
+}
+
+.user_wrapper .user_data .num_followers a,
+.follow_wrapper .user_info .num_followers a {
+  text-decoration: none;
+  color: var(--main_text_color);
+}
+
+.user_wrapper .user_data .num_followers a:hover,
+.follow_wrapper .user_info .num_followers a:hover {
+  color: var(--primary-color);
+}
+
+.user_wrapper .container .flex,
+.follow_wrapper .container .flex,
+.edit_wrapper .container .flex {
+  flex-direction: row;
+  margin: 0 20px;
+  padding: 10px 20px 0 20px;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.user_wrapper .profile_pic,
+.follow_wrapper .profile_pic,
+.edit_wrapper .profile_pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px #fff solid;
+  object-fit: cover;
+  margin: 0 30px;
+}
+
+.user_wrapper .user_info .grid,
+.follow_wrapper .user_info .grid,
+.edit_wrapper .user_info .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin-left: 70px;
+  padding-bottom: 20px;
+}
+
+.user_wrapper .user_info .grid > *:first-child,
+.follow_wrapper .user_info .grid > *:first-child,
+.edit_wrapper .user_info .grid > *:first-child {
+  grid-column: 1 / span 2;
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+
+.user_wrapper .user_info .grid > *:nth-child(6),
+.follow_wrapper .user_info .grid > *:nth-child(6) {
+  grid-column: 1 / span 2;
+  font-family: 'roboto';
+  padding-top: 5px;
+}
+
+.user_wrapper .btn,
+.edit_wrapper .btn,
+.add_wrapper .btn {
+  padding: 3px 13px;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'roboto';
+  background: var(--first_color);
+  color: var(--main_text_color);
+  border: 0.5px var(--border_color) solid;
+}
+
+.edit_wrapper .btn,
+.add_wrapper .btn {
+  padding: 3px 15px;
+}
+
+.user_wrapper .user_photos .grid,
+.follow_wrapper .user_photos .grid {
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 0.5px var(--border_color) solid;
+  padding-top: 30px;
+  gap: 10px;
+}
+
+.user_wrapper .user_photos .u_photo,
+.follow_wrapper .user_photos .u_photo {
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.follow_wrapper .btn {
+  padding: 3px 25px;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'roboto';
+  background: #047aed;
+  color: #fff;
+  border: 0.5px var(--border_color) solid;
+}
+
+.follow_wrapper .follow_button {
+  background-color: #fff;
+  padding: 0 27px;
+}
+
+.follow_wrapper .follow_pic {
+  width: 30px;
+  padding-right: 5px;
+}
+
+.add_wrapper .card input[type='file'],
+.edit_wrapper .card input[type='file'] {
+  display: none;
+  height: 0;
+}
+
+.edit_wrapper .username {
+  font-family: 'roboto';
+}
+
+.edit_wrapper .card,
+.add_wrapper .card {
+  width: 400px;
+  max-width: 350px;
+  margin: 0;
+  padding: 25px;
+}
+
+.post_wrapper .flex .sec1 .card {
+  max-width: 600px;
+  min-width: 600px;
+}
+
+.post_wrapper .flex .sec1 .card .post_img {
+  border-bottom: 0.5px var(--border_color) solid;
+}
+
+.post_wrapper .flex .sec1 .card .pub_descrip {
+  margin: 10px 15px;
+}
+
+.post_wrapper .flex .sec1 .card .pub_descrip .fname {
+  font-family: 'roboto';
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper .pub_comment .card {
+  height: 350px;
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper .pub_comment .card .u_fullname {
+  font-family: 'roboto';
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper .card {
+  width: 300px;
+  height: 200px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: auto;
+  padding: 15px 20px;
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper .card  .red_likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper .card p {
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper .card img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper .pub_like {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.post_wrapper .flex .sec2 .pub_wrapper .pub_like .comments_con {
+  align-self: start;
+}
+
+.add_wrapper .edit_card {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 20px;
+}
+
+.d_profile_wrapper .card {
+  position: absolute;
+  top: 150px;
+  width: 600px;
+  max-width: 550px;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+}
+
+.edit_wrapper .card .btn,
+.add_wrapper .card .btn {
+  margin: 0 20px;
+}
+
+.d_profile_wrapper .card .btn {
+  margin-top: 20px;
+}
+
+.d_profile_wrapper .card .cancel_btn {
+  background-color: rgb(169, 163, 0);
+  color: #fff;
+}
+
+
+.edit_wrapper .card .update_btn,
+.add_wrapper .card .update_btn {
+  margin: 0;
+  background: #047aed;
+  color: #fff;
+}
+
+.post_wrapper .profile_btn {
+  font-family: 'roboto';
+  font-size: 14px;
+  padding: 5px 25px;
+  margin-left: 20px;
+}
+
+.edit_wrapper .edit_form,
+.add_wrapper .edit_form,
+.post_wrapper .edit_form {
+  font-family: 'roboto';
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.edit_wrapper input[type='text'],
+.add_wrapper input[type='text'] {
+  border: 0.5px var(--border_color) solid;
+  font-family: 'lato';
+  font-size: 13px;
+  padding: 2px 10px;
+  margin: 0 20px;
+  border-radius: 3px;
+}
+
+.add_wrapper input[type='text'] {
+  width: 60%;
+  border: none;
+  border-bottom: 0.5px var(--border_color) solid;
+}
+
+.add_wrapper .edit_card input[type='text'] {
+  width: 100%;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.add_wrapper .flex {
+  height: 400px;
+}
+
+.edit_wrapper .switch_btn {
+  background: #047aed;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+.edit_wrapper .del_btn,
+.d_profile_wrapper .del_btn,
+.post_wrapper .del_btn {
+  background-color: rgb(213, 0, 0);
+  color: #fff;
+}
+
+
+
+/* Tablets and under */
+@media(max-width: 850px) {
+  .user_wrapper .user_photos .u_photo,
+  .follow_wrapper .user_photos .u_photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .d_profile_wrapper .card {
+    width: 450px;
+    max-width: 400px;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .user_wrapper .container .flex,
+  .follow_wrapper .container .flex,
+  .edit_wrapper .container .flex {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  .user_wrapper .profile_pic,
+  .follow_wrapper .profile_pic,
+  .edit_wrapper .profile_pic {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+
+  .user_wrapper .user_info .grid,
+  .follow_wrapper .user_info .grid,
+  .edit_wrapper .user_info .grid {
+    gap: 5px;
+    margin-left: 20px;
+    padding-bottom: 0;
+    font-size: 12px;
+  }
+
+  .user_wrapper .user_info .grid > *:first-child,
+  .follow_wrapper .user_info .grid > *:first-child,
+  .edit_wrapper .user_info .grid > *:first-child {
+    font-size: 20px;
+  }
+
+  .user_wrapper .btn, {
+    padding: 3px 9px;
+    font-size: 11px;
+  }
+
+  .user_wrapper .user_photos .grid,
+  .follow_wrapper .user_photos .grid {
+    padding-top: 15px;
+    gap: 5px;
+  }
+
+  .user_wrapper .user_photos .u_photo,
+  .follow_wrapper .user_photos .u_photo {
+    width: 125px;
+    height: 125px;
+  }
+  
+  .follow_wrapper .btn,
+  .edit_wrapper .btn {
+    padding: 3px 15px;
+    font-size: 11px;
+  }
+
+  .follow_wrapper .follow_button {
+    padding: 0 15px;
+  }
+
+  .follow_wrapper .follow_pic {
+    width: 25px;
+    padding-right: 5px;
+    margin: 0 5px;
+  }
+
+  .d_profile_wrapper .card {
+    width: 450px;
+    max-width: 300px;
+  }
+
+  .d_profile_wrapper .card p {
+    font-size: 13px;
+  }
+
+  .d_profile_wrapper .card .btn {
+    padding: 5px 20px;
+    font-size: 12px;
+  }
+
+  .post_wrapper .flex {
+    flex-direction: column;
+  }
+
+  .post_wrapper .flex .sec1 .card {
+    margin: 0px;
+    min-width: 360px;
+  }
+
+  .post_wrapper .container {
+    padding: 0px;
+  }
+
+  .post_wrapper .add_wrapper .edit_card {
+    margin: 0 20px;
+  }
+
+  .post_wrapper .back_profile {
+    display: none;
+    height: 1px;
+  }
+
+  .post_wrapper .add_wrapper {
+    margin-top: 0px;
+  }
+
+  .post_wrapper .flex .del_btn {
+    padding: 3px 15px;
+    font-size: 13px;
+  }
+}

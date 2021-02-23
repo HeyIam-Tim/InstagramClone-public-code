@@ -1,0 +1,8 @@
+/* Dark Theme */
+:root {
+  --first_color: #000;
+  --main_color: #222222;
+  --border_color: #fff;
+  --main_text_color: #fff;
+  --first_text_colot: #fff;
+}
