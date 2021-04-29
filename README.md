@@ -2,6 +2,8 @@
 
 
 The link: [https://instagram-tim.herokuapp.com](https://instagram-tim.herokuapp.com)
+<br>
+<br>
 
 
 ### Login and Register pages.
