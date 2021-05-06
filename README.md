@@ -4,6 +4,9 @@
 The link: [https://instagram-tim.herokuapp.com](https://instagram-tim.herokuapp.com)
 <br>
 <br>
+Used technologies: Django, HTML, CSS, Vanilla JavaScript, Django REST Framework, AWS s3 bucket, Postgres, Heroku.
+<br>
+<br>
 
 
 ### Login and Register pages.
